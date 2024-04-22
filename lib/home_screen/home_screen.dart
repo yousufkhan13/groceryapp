@@ -158,6 +158,77 @@ class HomeScreen extends StatelessWidget {
                           color: Colors.grey,
                         ),
                         borderRadius: BorderRadius.circular(18)),
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              top: 17,
+                            ),
+                            child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  Image.asset(
+                                    "assets/images/apples.png",
+                                  ),
+                                ]),
+                          ),
+                          const Row(
+                            children: [
+                              Padding(
+                                  padding:
+                                      EdgeInsets.only(left: 13.06, top: 15)),
+                              Text(
+                                "Red Apple",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const Row(
+                            children: [
+                              Padding(
+                                  padding:
+                                      EdgeInsets.only(left: 13.06, top: 7)),
+                              Text(
+                                "1kg, Priceg",
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              const Padding(
+                                  padding: EdgeInsets.only(
+                                left: 13.06,
+                                top: 130,
+                              )),
+                              const Text(
+                                "\$4.99",
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.w600),
+                              ),
+                              GestureDetector(
+                                onTap: () {},
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                    left: 50,
+                                  ),
+                                  child: Image.asset(
+                                    "assets/images/Group 6813.png",
+                                  ),
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               )
